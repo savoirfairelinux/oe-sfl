@@ -4,6 +4,7 @@ HOMEPAGE = "http://creytiv.com/baresip.html"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://docs/COPYING;md5=b429dd27e797136d56af4dfd3ca4e9be"
 DEPENDS = "openssl libre librem alsa-lib"
+RDEPENDS_${PN} = "libre librem"
 
 SRC_URI = "https://github.com/alfredh/baresip/archive/v${PV}.tar.gz;downloadfilename=${PN}_${PV}.tar.gz"
 
