@@ -4,6 +4,7 @@ HOMEPAGE = "http://creytiv.com/rem.html"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://docs/COPYING;md5=720bf8754d76ae6c201306a8e1a36a6b"
 DEPENDS = "libre"
+RDEPENDS_${PN} = "libre"
 
 SRC_URI = "https://github.com/creytiv/rem/archive/v${PV}.tar.gz;downloadfilename=${PN}_${PV}.tar.gz"
 
