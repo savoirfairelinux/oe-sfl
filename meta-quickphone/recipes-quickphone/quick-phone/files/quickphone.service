@@ -1,0 +1,12 @@
+[Unit]
+Description=quickPhone Service
+After=local-fs.target
+RequiresMountsFor=/usr/share/quick-phone/assets
+
+[Service]
+Type=simple
+Restart=on-failure
+ExecStart=/usr/bin/quickPhone -platform eglfs
+
+[Install]
+WantedBy=multi-user.target
